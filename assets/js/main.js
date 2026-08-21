@@ -138,14 +138,18 @@
   /**
    * Initiate Pure Counter
    */
-  new PureCounter();
+  if (typeof PureCounter !== 'undefined') {
+    new PureCounter();
+  }
 
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  if (typeof GLightbox !== 'undefined' && document.querySelector('.glightbox')) {
+    GLightbox({
+      selector: '.glightbox'
+    });
+  }
 
   /**
    * Init isotope layout and filters
