@@ -1074,6 +1074,13 @@ section,
   position: relative;
 }
 
+.portfolio .portfolio-item > img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  background-color: #f4f4f4;
+}
+
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
